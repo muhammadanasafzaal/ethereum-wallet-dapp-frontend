@@ -139,6 +139,9 @@ export const TransactionProvider = ({ children }) => {
             const transactionCount = await transactionContract.getAllTransactionCount()
             console.log(Number(transactionCount))
             setTransactionCount(Number(transactionCount))
+
+            await getAllTransactions();
+            setFormData({ addressTo: '', amount: '', keyword: '', message: '' })
         } catch (error) {
             console.log(error)
 
