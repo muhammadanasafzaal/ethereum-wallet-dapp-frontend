@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import logo from "../../../images/logo.png";
+import logo from "../../../images/logo2.png";
 import { TransactionContext } from "../../context/TransactionContext";
 import { useModal } from "../../hooks/useModal";
 import WalletModal from "../WalletModal";
